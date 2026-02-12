@@ -19,56 +19,110 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Système de Gestion Cloud",
-      description: "Architecture microservices avec Kubernetes et Docker pour une plateforme SaaS gérant 100k+ utilisateurs",
-      tech: ["React", "Node.js", "PostgreSQL", "Kubernetes"],
-      link: "#"
+      title: "Applications de Traitement de Flux Éditiques",
+      description: "Développement et maintenance d'applications complexes pour l'optimisation des processus de production documentaire chez Docapost DPS",
+      tech: ["PHP 7/8", "JavaScript", "XML/JSON", "Git", "Docker"],
+      link: "#",
+      company: "Docapost DPS",
+      period: "2015-2025"
     },
     {
-      title: "Application Mobile FinTech",
-      description: "App de gestion financière avec authentification biométrique et synchronisation en temps réel",
-      tech: ["React Native", "Firebase", "TypeScript", "Redux"],
-      link: "#"
+      title: "Migration PHP5 vers PHP7/8",
+      description: "Refactoring complet d'applications legacy avec optimisation du code et mise en place de bonnes pratiques de développement",
+      tech: ["PHP 8", "Docker", "Git", "VSCode"],
+      link: "#",
+      company: "Docapost DPS",
+      period: "2020-2024"
     },
     {
-      title: "Plateforme E-commerce",
-      description: "Solution complète avec panier, paiement sécurisé et tableau de bord admin",
-      tech: ["Next.js", "Stripe", "MongoDB", "Tailwind"],
-      link: "#"
+      title: "Intranet d'Entreprise & Tableau de Bord",
+      description: "Création complète du site intranet avec gestion des droits et dashboard interactif pour pilotage de chantiers en temps réel",
+      tech: ["PHP 5", "MySQL", "Google Charts", "JavaScript"],
+      link: "#",
+      company: "SAS AVÉO",
+      period: "2010-2013"
     },
     {
-      title: "Dashboard Analytics",
-      description: "Visualisation de données en temps réel avec graphiques interactifs et exports personnalisés",
-      tech: ["Vue.js", "D3.js", "Python", "FastAPI"],
-      link: "#"
+      title: "Application Gestion Chantiers",
+      description: "Application métier avec le Framework Zend 2 pour la gestion complète des chantiers et ressources",
+      tech: ["Zend Framework 2", "PHP", "MySQL", "HTML5/CSS3"],
+      link: "#",
+      company: "SAS AVÉO",
+      period: "2012-2013"
+    },
+    {
+      title: "Application iOS Expertise Terrain",
+      description: "Développement d'une app mobile pour l'expertise des lignes électriques avec synchronisation serveur temps réel",
+      tech: ["iOS", "PHP", "MySQL", "API REST"],
+      link: "#",
+      company: "SAS AVÉO",
+      period: "2011-2012"
+    },
+    {
+      title: "Application Diagnostic Immobilier",
+      description: "Solution métier pour diagnostic technique immobilier avec génération automatique de rapports professionnels",
+      tech: ["VBA", "Excel 2007", "Word 2007"],
+      link: "#",
+      company: "Société DIMENSIO",
+      period: "2014"
     }
   ];
 
   const skills = [
-    { category: "Frontend", items: ["React", "Vue.js", "TypeScript", "Next.js", "Tailwind CSS"] },
-    { category: "Backend", items: ["Node.js", "Python", "Java", "PostgreSQL", "MongoDB"] },
-    { category: "DevOps", items: ["Docker", "Kubernetes", "CI/CD", "AWS", "Azure"] },
-    { category: "Outils", items: ["Git", "Figma", "Jest", "Webpack", "Linux"] }
+    { 
+      category: "Langages", 
+      items: ["PHP 7/8", "Python", "JavaScript", "SQL", "HTML5/CSS3", "VBA"] 
+    },
+    { 
+      category: "Frameworks", 
+      items: ["Symfony 2", "Zend Framework", "Struts 1&2", "jQuery", "JPA/EJB"] 
+    },
+    { 
+      category: "Bases de données", 
+      items: ["MySQL", "SQL Server", "Oracle", "HSQLDB", "Access"] 
+    },
+    { 
+      category: "DevOps & Cloud", 
+      items: ["Docker", "Kubernetes", "Git/GitHub", "CI/CD", "Linux/Windows Server"] 
+    },
+    { 
+      category: "CMS & Outils", 
+      items: ["WordPress", "Joomla", "VSCode", "Eclipse", "Maven", "Photoshop"] 
+    },
+    { 
+      category: "Méthodologies", 
+      items: ["Agile/Scrum", "UML", "Merise", "Gestion de projet", "Code Reviews"] 
+    }
   ];
 
   const experiences = [
     {
-      title: "Lead Developer",
-      company: "TechCorp International",
-      period: "2022 - Présent",
-      description: "Direction technique d'une équipe de 8 développeurs. Conception d'architectures scalables et migration vers le cloud."
+      title: "Ingénieur d'Études & Développeur IT",
+      company: "DOCAPOST DPS – La Défense (92)",
+      period: "Oct 2015 - Aujourd'hui (10 ans)",
+      description: "Développement et maintenance d'applications de traitement de flux éditiques. Migration PHP5→PHP7/8, conception d'algorithmes complexes, modernisation de la stack (Docker, Python, DevOps). Mise en place de bonnes pratiques Git et code reviews.",
+      highlights: ["Migration legacy", "Traitement flux éditiques", "Automatisation", "DevOps"]
     },
     {
-      title: "Full Stack Developer",
-      company: "StartupXYZ",
-      period: "2020 - 2022",
-      description: "Développement de features complètes, de la conception à la production. Amélioration des performances de 40%."
+      title: "Développeur Web Full-Stack",
+      company: "SAS AVÉO – Colombes (92)",
+      period: "Nov 2010 - Déc 2013 (3 ans)",
+      description: "Création site intranet entreprise, dashboard interactif de pilotage chantiers, application gestion chantiers (Zend 2), app iOS expertise terrain, serveur mail automatisé. Développement d'outils Excel/VBA pour automatisation métier.",
+      highlights: ["Zend Framework", "App iOS", "Automatisation", "Full-Stack"]
     },
     {
-      title: "Junior Developer",
-      company: "Digital Agency",
-      period: "2018 - 2020",
-      description: "Développement web et maintenance d'applications client. Apprentissage des meilleures pratiques agiles."
+      title: "Analyste Programmeur Freelance",
+      company: "Société DIMENSIO – Latour-de-France (66)",
+      period: "Mars 2014 - Août 2014 (6 mois)",
+      description: "Développement application métier pour diagnostic technique immobilier avec génération automatique de rapports professionnels (Excel/VBA + Word).",
+      highlights: ["VBA", "Freelance", "Solution métier"]
+    },
+    {
+      title: "Contrôleur de Gestion & Développeur",
+      company: "SARL LORENT – Champigny-sur-Marne (94)",
+      period: "Nov 2005 - Oct 2010 (5 ans)",
+      description: "Développement d'outils de contrôle de gestion et d'aide à la décision. Création de tableaux de bord, applications Excel/VBA, et site web de la société. Double compétence technique et métier.",
+      highlights: ["Contrôle de gestion", "Business Intelligence", "VBA"]
     }
   ];
 
@@ -117,7 +171,7 @@ export default function Portfolio() {
           <div className="inline-block mb-6 px-6 py-2 border-2 border-lime-400 bg-lime-400/10 backdrop-blur-sm
             transform -rotate-2"
             style={{ animation: 'slideInLeft 0.8s ease-out' }}>
-            <span className="text-lime-400 font-mono text-sm tracking-wider">DISPONIBLE POUR PROJETS</span>
+            <span className="text-lime-400 font-mono text-sm tracking-wider">DISPONIBLE • 10+ ANS D'EXPÉRIENCE</span>
           </div>
           
           <h1 className="text-7xl md:text-9xl font-black mb-6 leading-none"
@@ -125,16 +179,16 @@ export default function Portfolio() {
               animation: 'slideInUp 1s ease-out 0.2s both',
               fontFamily: "'Space Mono', monospace"
             }}>
-            <span className="block text-white">DÉVELOPPEUR</span>
+            <span className="block text-white">PATRICE</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-cyan-400">
-              FULL STACK
+              LORENT
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto font-mono"
             style={{ animation: 'slideInUp 1s ease-out 0.4s both' }}>
-            Je transforme des idées en expériences digitales exceptionnelles.
-            <span className="text-lime-400"> Code propre. Architecture solide. Design impactant.</span>
+            Ingénieur développement PHP & Python • Expert en traitement de flux éditiques
+            <span className="text-lime-400 block mt-2">Migration legacy • Automatisation • Architecture solide</span>
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mb-12"
@@ -156,11 +210,11 @@ export default function Portfolio() {
 
           <div className="flex gap-6 justify-center"
             style={{ animation: 'slideInUp 1s ease-out 0.8s both' }}>
-            <a href="https://github.com/plorent-droid" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/patricelorent" target="_blank" rel="noopener noreferrer"
               className="p-3 border-2 border-gray-600 hover:border-lime-400 hover:bg-lime-400/10 transition-all duration-300">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://www.linkedin.com/in/patrice-lorent-57643683" target="_blank" rel="noopener noreferrer"
+            <a href="https://linkedin.com/in/patrice-lorent" target="_blank" rel="noopener noreferrer"
               className="p-3 border-2 border-gray-600 hover:border-cyan-400 hover:bg-cyan-400/10 transition-all duration-300">
               <Linkedin className="w-6 h-6" />
             </a>
@@ -195,11 +249,17 @@ export default function Portfolio() {
                   transition-all duration-300 transform hover:-translate-y-2"
                 style={{ animation: `slideInRight 0.6s ease-out ${idx * 0.1}s both` }}>
                 
-                <div className="flex items-start justify-between mb-4">
+                <div className="flex items-start justify-between mb-2">
                   <h3 className="text-2xl font-bold group-hover:text-lime-400 transition-colors">
                     {project.title}
                   </h3>
-                  <ExternalLink className="w-6 h-6 text-gray-600 group-hover:text-lime-400 transition-colors" />
+                  <ExternalLink className="w-6 h-6 text-gray-600 group-hover:text-lime-400 transition-colors flex-shrink-0 ml-2" />
+                </div>
+
+                <div className="flex flex-wrap gap-2 mb-4 text-sm font-mono text-cyan-400">
+                  <span>{project.company}</span>
+                  <span className="text-gray-600">•</span>
+                  <span>{project.period}</span>
                 </div>
 
                 <p className="text-gray-400 mb-6 leading-relaxed">
@@ -214,14 +274,6 @@ export default function Portfolio() {
                       {tech}
                     </span>
                   ))}
-                </div>
-
-                <div className="mt-6 pt-6 border-t-2 border-gray-800 group-hover:border-lime-400 transition-colors">
-                  <a href={project.link}
-                    className="inline-flex items-center gap-2 text-lime-400 font-mono text-sm 
-                      hover:gap-4 transition-all duration-300">
-                    VOIR LE PROJET →
-                  </a>
                 </div>
               </div>
             ))}
@@ -240,7 +292,7 @@ export default function Portfolio() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skillGroup, idx) => (
               <div key={idx}
                 className="border-4 border-cyan-400 bg-black p-6"
@@ -262,6 +314,69 @@ export default function Portfolio() {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Formation & Certifications Section */}
+      <section id="formation" className="relative py-32 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center gap-4 mb-16">
+            <Terminal className="w-12 h-12 text-lime-400" />
+            <h2 className="text-5xl md:text-7xl font-black" style={{ fontFamily: "'Space Mono', monospace" }}>
+              FORMATION
+              <span className="block text-2xl text-gray-500 font-normal mt-2">Certifications & diplômes</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="border-4 border-lime-400 bg-black p-6"
+              style={{ animation: 'slideInLeft 0.6s ease-out' }}>
+              <div className="bg-lime-400 text-black px-4 py-2 font-black text-lg mb-6 -mx-6 -mt-6">
+                CERTIFICATIONS RÉCENTES
+              </div>
+              <ul className="space-y-4">
+                <li className="border-l-4 border-cyan-400 pl-4">
+                  <div className="text-cyan-400 font-bold">2026</div>
+                  <div className="text-white font-mono">GitHub Copilot</div>
+                  <div className="text-gray-500 text-sm">Docaposte Institute</div>
+                </li>
+                <li className="border-l-4 border-cyan-400 pl-4">
+                  <div className="text-cyan-400 font-bold">2025</div>
+                  <div className="text-white font-mono">Automatisation avec Python</div>
+                  <div className="text-gray-500 text-sm">Docaposte Institute</div>
+                </li>
+                <li className="border-l-4 border-cyan-400 pl-4">
+                  <div className="text-cyan-400 font-bold">2023</div>
+                  <div className="text-white font-mono">Initiation Cloud/DevOps</div>
+                  <div className="text-gray-500 text-sm">Docaposte Institute</div>
+                </li>
+              </ul>
+            </div>
+
+            <div className="border-4 border-lime-400 bg-black p-6"
+              style={{ animation: 'slideInRight 0.6s ease-out 0.2s both' }}>
+              <div className="bg-lime-400 text-black px-4 py-2 font-black text-lg mb-6 -mx-6 -mt-6">
+                DIPLÔMES
+              </div>
+              <ul className="space-y-4">
+                <li className="border-l-4 border-cyan-400 pl-4">
+                  <div className="text-cyan-400 font-bold">2014-2015</div>
+                  <div className="text-white font-mono">Développeur Java EE (Niveau II)</div>
+                  <div className="text-gray-500 text-sm">AFPA Créteil</div>
+                </li>
+                <li className="border-l-4 border-cyan-400 pl-4">
+                  <div className="text-cyan-400 font-bold">2005-2011</div>
+                  <div className="text-white font-mono">DUT Informatique (niveau)</div>
+                  <div className="text-gray-500 text-sm">CNAM Paris</div>
+                </li>
+                <li className="border-l-4 border-cyan-400 pl-4">
+                  <div className="text-cyan-400 font-bold">2004</div>
+                  <div className="text-white font-mono">BTS Comptabilité & Gestion</div>
+                  <div className="text-gray-500 text-sm">Académie de Créteil</div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -298,9 +413,20 @@ export default function Portfolio() {
                   </span>
                 </div>
 
-                <p className="text-gray-400 leading-relaxed max-w-3xl">
+                <p className="text-gray-400 leading-relaxed max-w-3xl mb-4">
                   {exp.description}
                 </p>
+
+                {exp.highlights && (
+                  <div className="flex flex-wrap gap-2">
+                    {exp.highlights.map((highlight, hIdx) => (
+                      <span key={hIdx}
+                        className="px-3 py-1 text-xs font-mono bg-lime-400/10 border border-lime-400/30 text-lime-400">
+                        {highlight}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -312,10 +438,13 @@ export default function Portfolio() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl md:text-7xl font-black text-black mb-6 text-center"
             style={{ fontFamily: "'Space Mono', monospace" }}>
-            TRAVAILLONS ENSEMBLE
+            DISCUTONS DE VOTRE PROJET
           </h2>
-          <p className="text-black text-xl text-center mb-12 font-mono">
-            Un projet en tête ? Discutons-en autour d'un café (virtuel) !
+          <p className="text-black text-xl text-center mb-4 font-mono">
+            CDI • Freelance • Mission longue durée
+          </p>
+          <p className="text-black/80 text-lg text-center mb-12 font-mono">
+            📍 Île-de-France + Télétravail • 📧 patrice.lorent@gmail.com • 📞 06.64.03.91.46
           </p>
 
           <form className="space-y-6">
@@ -326,7 +455,7 @@ export default function Portfolio() {
                   className="w-full px-4 py-3 border-4 border-black bg-white text-black 
                     focus:outline-none focus:border-black focus:shadow-[4px_4px_0px_rgba(0,0,0,1)]
                     transition-shadow font-mono"
-                  placeholder="John Doe" />
+                  placeholder="Votre nom" />
               </div>
               <div>
                 <label className="block text-black font-bold mb-2 font-mono">EMAIL</label>
@@ -334,7 +463,7 @@ export default function Portfolio() {
                   className="w-full px-4 py-3 border-4 border-black bg-white text-black 
                     focus:outline-none focus:border-black focus:shadow-[4px_4px_0px_rgba(0,0,0,1)]
                     transition-shadow font-mono"
-                  placeholder="john@example.com" />
+                  placeholder="votre@email.com" />
               </div>
             </div>
 
@@ -344,7 +473,7 @@ export default function Portfolio() {
                 className="w-full px-4 py-3 border-4 border-black bg-white text-black h-40
                   focus:outline-none focus:border-black focus:shadow-[4px_4px_0px_rgba(0,0,0,1)]
                   transition-shadow resize-none font-mono"
-                placeholder="Parlez-moi de votre projet..."></textarea>
+                placeholder="Parlez-moi de votre projet, mission ou opportunité..."></textarea>
             </div>
 
             <button type="submit"
@@ -361,9 +490,11 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="relative py-12 px-6 bg-black border-t-4 border-lime-400">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-gray-500 font-mono">
-            © 2024 - Conçu & développé avec{' '}
-            <span className="text-lime-400">{'<3'}</span>
+          <p className="text-gray-500 font-mono mb-2">
+            © 2025 Patrice Lorent - Ingénieur Développement PHP & Python
+          </p>
+          <p className="text-gray-600 font-mono text-sm">
+            Conçu avec <span className="text-lime-400">{'<3'}</span> et beaucoup de caféine
           </p>
         </div>
       </footer>
