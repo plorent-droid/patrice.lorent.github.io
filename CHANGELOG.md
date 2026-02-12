@@ -1,3 +1,6 @@
+## 0.2.0 (February 12, 2026)
+  - :star: feature(portfolio): mise à jour du contenu pour Patrice Lorent
+
 ## 0.1.1 (February 12, 2026)
   - Merge branch 'feature/maj_README'
   - :up: update(README.md): mise à jour README.md avec des instructions de déploiement GitHub Pages et des conseils de dépannage
