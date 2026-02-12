@@ -156,15 +156,15 @@ export default function Portfolio() {
 
           <div className="flex gap-6 justify-center"
             style={{ animation: 'slideInUp 1s ease-out 0.8s both' }}>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/plorent-droid" target="_blank" rel="noopener noreferrer"
               className="p-3 border-2 border-gray-600 hover:border-lime-400 hover:bg-lime-400/10 transition-all duration-300">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/patrice-lorent-57643683" target="_blank" rel="noopener noreferrer"
               className="p-3 border-2 border-gray-600 hover:border-cyan-400 hover:bg-cyan-400/10 transition-all duration-300">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:contact@example.com"
+            <a href="mailto:patrice.lorent@gmail.com"
               className="p-3 border-2 border-gray-600 hover:border-lime-400 hover:bg-lime-400/10 transition-all duration-300">
               <Mail className="w-6 h-6" />
             </a>
