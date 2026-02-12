@@ -1,3 +1,7 @@
+## 0.1.1 (February 12, 2026)
+  - Merge branch 'feature/maj_README'
+  - :up: update(README.md): mise à jour README.md avec des instructions de déploiement GitHub Pages et des conseils de dépannage
+
 ## 0.1.0 (February 12, 2026)
   - :up: update(portfolio): mise à jour du site portfolio
   - Merge branch 'feature/maj_lien' into develop
