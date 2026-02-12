@@ -2,6 +2,8 @@
 
 Portfolio créatif et moderne avec une esthétique néo-brutaliste cyberpunk. Conçu avec React, Vite et Tailwind CSS.
 
+🌐 **Site en ligne** : [https://plorent-droid.github.io/patrice.lorent.github.io/](https://plorent-droid.github.io/patrice.lorent.github.io/)
+
 ## ✨ Fonctionnalités
 
 - **Design Unique** : Esthétique néo-brutaliste avec accents néon (vert lime & cyan)
@@ -53,7 +55,7 @@ Le site s'ouvrira automatiquement à `http://localhost:3000`
 
 ### Modifier vos informations
 
-Ouvre le fichier `portfolio.jsx` et personnalise :
+Ouvre le fichier `src/portfolio.jsx` et personnalise :
 
 **Projets** (ligne ~19) :
 ```javascript
@@ -101,7 +103,7 @@ colors: {
 
 ### Liens sociaux
 
-Modifie les liens vers tes profils (ligne ~129 dans `portfolio.jsx`) :
+Modifie les liens vers tes profils (ligne ~129 dans `src/portfolio.jsx`) :
 ```javascript
 <a href="https://github.com/ton-username" ...>
 <a href="https://linkedin.com/in/ton-profil" ...>
@@ -118,25 +120,40 @@ Les fichiers optimisés seront générés dans le dossier `dist/`.
 
 ## 📱 Déploiement
 
-Tu peux déployer ce portfolio sur :
+### GitHub Pages (Configuré)
 
+Ce projet est configuré pour un déploiement automatique sur GitHub Pages :
+
+1. **Push sur la branche `develop`** déclenche automatiquement le déploiement
+2. **GitHub Actions** build et déploie le site
+3. **URL de production** : [https://plorent-droid.github.io/patrice.lorent.github.io/](https://plorent-droid.github.io/patrice.lorent.github.io/)
+
+Le workflow est défini dans `.github/workflows/deploy.yml`
+
+### Autres plateformes
+
+Tu peux aussi déployer sur :
 - **Vercel** : `vercel --prod`
 - **Netlify** : Drag & drop du dossier `dist/`
-- **GitHub Pages** : Configure avec GitHub Actions
 - **AWS S3** : Upload du dossier `dist/`
 
 ## 🎯 Structure du Projet
 
 ```
 portfolio-it/
-├── index.html          # Point d'entrée HTML
-├── main.jsx           # Initialisation React
-├── portfolio.jsx      # Composant principal
-├── style.css          # Styles globaux
-├── package.json       # Dépendances
-├── vite.config.js     # Configuration Vite
-├── tailwind.config.js # Configuration Tailwind
-└── README.md          # Ce fichier
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # GitHub Actions workflow
+├── src/
+│   ├── main.jsx           # Initialisation React
+│   ├── portfolio.jsx      # Composant principal
+│   └── style.css          # Styles globaux
+├── index.html             # Point d'entrée HTML
+├── package.json           # Dépendances
+├── vite.config.js         # Configuration Vite
+├── tailwind.config.js     # Configuration Tailwind
+├── postcss.config.js      # Configuration PostCSS
+└── README.md              # Ce fichier
 ```
 
 ## 💡 Conseils
@@ -145,6 +162,16 @@ portfolio-it/
 - **SEO** : Ajoute des meta tags personnalisés dans `index.html`
 - **Analytics** : Intègre Google Analytics ou Plausible pour suivre les visites
 - **Blog** : Tu peux ajouter une section blog en créant un nouveau composant
+
+## ⚙️ Configuration GitHub Pages
+
+Le projet utilise la configuration suivante dans `vite.config.js` :
+
+```javascript
+base: '/patrice.lorent.github.io/'
+```
+
+Cette configuration est **essentielle** pour que les assets (JS, CSS) soient correctement chargés sur GitHub Pages. Le `base` doit correspondre au nom de ton repository.
 
 ## 🐛 Problèmes Courants
 
@@ -160,9 +187,19 @@ portfolio-it/
 - Désactive les effets de curseur si ton ordinateur rame
 - Réduis le nombre de formes géométriques animées
 
+**Erreur 404 sur GitHub Pages ?**
+- Vérifie que le `base` dans `vite.config.js` correspond au nom de ton repository
+- Assure-toi que le workflow GitHub Actions s'est exécuté sans erreur
+- Vérifie que GitHub Pages est activé dans les paramètres du repository (Settings > Pages)
+
+**Les assets ne se chargent pas sur GitHub Pages ?**
+- Le problème vient souvent du `base` mal configuré dans `vite.config.js`
+- Pour un repository `username.github.io`, utilise `base: '/'`
+- Pour un repository avec un nom personnalisé, utilise `base: '/nom-du-repo/'`
+
 ## 📄 Licence
 
-Ce projet est libre d'utilisation pour ton portfolio personnel. Si tu l'utilises, un petit crédit est apprécié mais pas obligatoire ! 😊
+Ce projet est libre d'utilisation pour un usage personnel.
 
 ## 🤝 Contribution
 
