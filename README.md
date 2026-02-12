@@ -1,18 +1,24 @@
-# 🚀 Portfolio IT - Développeur Full Stack
+# 🚀 Portfolio Patrice Lorent - Ingénieur Développement PHP & Python
 
-Portfolio créatif et moderne avec une esthétique néo-brutaliste cyberpunk. Conçu avec React, Vite et Tailwind CSS.
+Portfolio professionnel avec une esthétique néo-brutaliste cyberpunk. Conçu avec React, Vite et Tailwind CSS.
 
-🌐 **Site en ligne** : [https://plorent-droid.github.io/patrice.lorent.github.io/](https://plorent-droid.github.io/patrice.lorent.github.io/)
+## 👤 À propos
+
+**Patrice Lorent** - Ingénieur développement avec 10+ ans d'expérience  
+📧 patrice.lorent@gmail.com | 📞 06.64.03.91.46  
+📍 Champigny-sur-Marne (94) - Île-de-France + Télétravail  
+🔗 [LinkedIn](https://linkedin.com/in/patrice-lorent) | [GitHub](https://github.com/patricelorent)
 
 ## ✨ Fonctionnalités
 
 - **Design Unique** : Esthétique néo-brutaliste avec accents néon (vert lime & cyan)
 - **Sections Complètes** :
-  - 🎯 Hero avec animations dynamiques
-  - 💼 Projets avec descriptions détaillées
-  - 🛠️ Compétences techniques organisées par catégorie
-  - 📊 Expérience professionnelle avec timeline
-  - 📧 Formulaire de contact stylisé
+  - 🎯 Hero avec nom et titre professionnel
+  - 💼 6 Projets réels avec descriptions détaillées (Docapost DPS, AVÉO, DIMENSIO)
+  - 🛠️ Compétences techniques organisées en 6 catégories
+  - 🎓 Formation & Certifications (GitHub Copilot, Python, Cloud/DevOps)
+  - 📊 Expérience professionnelle complète (2005-2025)
+  - 📧 Formulaire de contact avec informations personnelles
 - **Animations Fluides** : Effets de survol, transitions, animations d'apparition
 - **Responsive Design** : Optimisé pour tous les écrans
 - **Effets Visuels** : Cursor glow, texture grain, grille animée, formes géométriques flottantes
@@ -53,40 +59,46 @@ Le site s'ouvrira automatiquement à `http://localhost:3000`
 
 ## 🎨 Personnalisation
 
-### Modifier vos informations
+### ⚠️ IMPORTANT : Configuration GitHub Pages
 
-Ouvre le fichier `src/portfolio.jsx` et personnalise :
+Avant de déployer, dans `vite.config.js`, remplace `'nom-de-ton-repo'` par le nom exact de ton repository GitHub :
+```javascript
+base: '/portfolio/',  // Si ton repo s'appelle "portfolio"
+// OU
+base: '/',  // Si ton repo s'appelle exactement "patricelorent.github.io"
+```
 
-**Projets** (ligne ~19) :
+### Modifier tes informations personnelles
+
+Les informations dans ce portfolio sont déjà personnalisées avec ton CV. Tu peux les ajuster dans `portfolio.jsx` :
+
+**Liens sociaux** (ligne ~265) :
+```javascript
+<a href="https://github.com/patricelorent" ...>
+<a href="https://linkedin.com/in/patrice-lorent" ...>
+<a href="mailto:patrice.lorent@gmail.com" ...>
+```
+
+**Ajouter de nouveaux projets** (ligne ~19) :
 ```javascript
 const projects = [
   {
-    title: "Ton Projet",
-    description: "Description de ton projet",
-    tech: ["React", "Node.js"],
-    link: "https://ton-lien.com"
+    title: "Ton Nouveau Projet",
+    description: "Description du projet",
+    tech: ["PHP", "Docker", "MySQL"],
+    link: "https://ton-lien.com",
+    company: "Nom de l'entreprise",
+    period: "2024-2025"
   }
 ]
 ```
 
-**Compétences** (ligne ~44) :
+**Ajouter des compétences** (ligne ~70) :
 ```javascript
 const skills = [
   { 
-    category: "Frontend", 
-    items: ["React", "Vue.js", ...] 
-  }
-]
-```
-
-**Expériences** (ligne ~53) :
-```javascript
-const experiences = [
-  {
-    title: "Ton Poste",
-    company: "Ton Entreprise",
-    period: "2023 - Présent",
-    description: "Description de ton rôle"
+    category: "Nouvelle Catégorie", 
+    items: ["Compétence 1", "Compétence 2"] 
   }
 ]
 ```
@@ -103,11 +115,11 @@ colors: {
 
 ### Liens sociaux
 
-Modifie les liens vers tes profils (ligne ~129 dans `src/portfolio.jsx`) :
+Modifie les liens vers tes profils (ligne ~265 dans `portfolio.jsx`) :
 ```javascript
-<a href="https://github.com/ton-username" ...>
-<a href="https://linkedin.com/in/ton-profil" ...>
-<a href="mailto:ton-email@example.com" ...>
+<a href="https://github.com/patricelorent" ...>  // Déjà configuré
+<a href="https://linkedin.com/in/patrice-lorent" ...>  // Déjà configuré
+<a href="mailto:patrice.lorent@gmail.com" ...>  // Déjà configuré
 ```
 
 ## 🚀 Build pour Production
@@ -118,42 +130,47 @@ npm run build
 
 Les fichiers optimisés seront générés dans le dossier `dist/`.
 
-## 📱 Déploiement
+## 📱 Déploiement sur GitHub Pages
 
-### GitHub Pages (Configuré)
+**📖 Consulte le guide complet** : `DEPLOIEMENT_GITHUB_PAGES.md`
 
-Ce projet est configuré pour un déploiement automatique sur GitHub Pages :
+### Déploiement rapide :
 
-1. **Push sur la branche `develop`** déclenche automatiquement le déploiement
-2. **GitHub Actions** build et déploie le site
-3. **URL de production** : [https://plorent-droid.github.io/patrice.lorent.github.io/](https://plorent-droid.github.io/patrice.lorent.github.io/)
+1. **Configure la base URL** dans `vite.config.js`
+2. **Pousse sur GitHub** :
+   ```bash
+   git init
+   git add .
+   git commit -m "Portfolio Patrice Lorent"
+   git remote add origin https://github.com/patricelorent/ton-repo.git
+   git push -u origin main
+   ```
+3. **Active GitHub Pages** : Settings → Pages → Source : GitHub Actions
+4. Ton site sera en ligne à `https://patricelorent.github.io/ton-repo/`
 
-Le workflow est défini dans `.github/workflows/deploy.yml`
+Le workflow GitHub Actions (`.github/workflows/deploy.yml`) est déjà configuré pour un déploiement automatique !
 
-### Autres plateformes
+## 📊 Autres Options de Déploiement
 
 Tu peux aussi déployer sur :
+
 - **Vercel** : `vercel --prod`
 - **Netlify** : Drag & drop du dossier `dist/`
+- **GitHub Pages** : Configure avec GitHub Actions
 - **AWS S3** : Upload du dossier `dist/`
 
 ## 🎯 Structure du Projet
 
 ```
 portfolio-it/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml      # GitHub Actions workflow
-├── src/
-│   ├── main.jsx           # Initialisation React
-│   ├── portfolio.jsx      # Composant principal
-│   └── style.css          # Styles globaux
-├── index.html             # Point d'entrée HTML
-├── package.json           # Dépendances
-├── vite.config.js         # Configuration Vite
-├── tailwind.config.js     # Configuration Tailwind
-├── postcss.config.js      # Configuration PostCSS
-└── README.md              # Ce fichier
+├── index.html          # Point d'entrée HTML
+├── main.jsx           # Initialisation React
+├── portfolio.jsx      # Composant principal
+├── style.css          # Styles globaux
+├── package.json       # Dépendances
+├── vite.config.js     # Configuration Vite
+├── tailwind.config.js # Configuration Tailwind
+└── README.md          # Ce fichier
 ```
 
 ## 💡 Conseils
@@ -162,16 +179,6 @@ portfolio-it/
 - **SEO** : Ajoute des meta tags personnalisés dans `index.html`
 - **Analytics** : Intègre Google Analytics ou Plausible pour suivre les visites
 - **Blog** : Tu peux ajouter une section blog en créant un nouveau composant
-
-## ⚙️ Configuration GitHub Pages
-
-Le projet utilise la configuration suivante dans `vite.config.js` :
-
-```javascript
-base: '/patrice.lorent.github.io/'
-```
-
-Cette configuration est **essentielle** pour que les assets (JS, CSS) soient correctement chargés sur GitHub Pages. Le `base` doit correspondre au nom de ton repository.
 
 ## 🐛 Problèmes Courants
 
@@ -187,19 +194,9 @@ Cette configuration est **essentielle** pour que les assets (JS, CSS) soient cor
 - Désactive les effets de curseur si ton ordinateur rame
 - Réduis le nombre de formes géométriques animées
 
-**Erreur 404 sur GitHub Pages ?**
-- Vérifie que le `base` dans `vite.config.js` correspond au nom de ton repository
-- Assure-toi que le workflow GitHub Actions s'est exécuté sans erreur
-- Vérifie que GitHub Pages est activé dans les paramètres du repository (Settings > Pages)
-
-**Les assets ne se chargent pas sur GitHub Pages ?**
-- Le problème vient souvent du `base` mal configuré dans `vite.config.js`
-- Pour un repository `username.github.io`, utilise `base: '/'`
-- Pour un repository avec un nom personnalisé, utilise `base: '/nom-du-repo/'`
-
 ## 📄 Licence
 
-Ce projet est libre d'utilisation pour un usage personnel.
+Ce projet est libre d'utilisation pour ton portfolio personnel. Si tu l'utilises, un petit crédit est apprécié mais pas obligatoire ! 😊
 
 ## 🤝 Contribution
 
