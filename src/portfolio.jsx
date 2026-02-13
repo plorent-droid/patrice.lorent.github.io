@@ -19,52 +19,58 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Applications de Traitement de Flux Éditiques",
-      description: "Développement et maintenance d'applications complexes pour l'optimisation des processus de production documentaire chez Docapost DPS",
-      tech: ["PHP 7/8", "JavaScript", "XML/JSON", "Git", "Docker"],
-      link: "#",
-      company: "Docapost DPS",
-      period: "2015-2025"
+      title: "🎙️ Transcription Audio IA - Whisper",
+      description: "Application web de transcription audio utilisant OpenAI Whisper. Interface drag & drop, support multi-formats (MP3, WAV, M4A), déployée sur Hugging Face Spaces",
+      tech: ["Python", "Flask", "OpenAI Whisper", "Transformers", "Hugging Face"],
+      link: "https://huggingface.co/spaces/[ton-username]/whisper-transcription",
+      company: "Projet Personnel",
+      period: "2024",
+      github: "https://github.com/patricelorent/whisper-transcription"
     },
     {
-      title: "Migration PHP5 vers PHP7/8",
-      description: "Refactoring complet d'applications legacy avec optimisation du code et mise en place de bonnes pratiques de développement",
-      tech: ["PHP 8", "Docker", "Git", "VSCode"],
+      title: "📊 Gestionnaire de Tâches VBA Excel",
+      description: "Application Excel VBA complète avec dashboard interactif, graphiques de progression, filtres dynamiques et export PDF. Interface utilisateur intuitive avec menu personnalisé",
+      tech: ["VBA", "Excel", "Automatisation", "Data Visualization"],
       link: "#",
-      company: "Docapost DPS",
-      period: "2020-2024"
+      company: "Projet Personnel",
+      period: "2024",
+      github: "https://github.com/patricelorent/vba-task-manager"
     },
     {
-      title: "Intranet d'Entreprise & Tableau de Bord",
-      description: "Création complète du site intranet avec gestion des droits et dashboard interactif pour pilotage de chantiers en temps réel",
-      tech: ["PHP 5", "MySQL", "Google Charts", "JavaScript"],
+      title: "🚀 API REST Blog - Symfony",
+      description: "API REST professionnelle avec authentification JWT, gestion d'articles et commentaires, documentation Swagger/OpenAPI. Architecture hexagonale avec tests unitaires",
+      tech: ["Symfony 6", "API Platform", "Doctrine ORM", "JWT", "MySQL"],
       link: "#",
-      company: "SAS AVÉO",
-      period: "2010-2013"
+      company: "Projet Personnel",
+      period: "2024",
+      github: "https://github.com/patricelorent/symfony-blog-api"
     },
     {
-      title: "Application Gestion Chantiers",
-      description: "Application métier avec le Framework Zend 2 pour la gestion complète des chantiers et ressources",
-      tech: ["Zend Framework 2", "PHP", "MySQL", "HTML5/CSS3"],
+      title: "📈 Dashboard Analytics React",
+      description: "Dashboard moderne avec graphiques interactifs (Recharts), statistiques en temps réel, tableaux de données. Design responsive avec Tailwind CSS",
+      tech: ["React 18", "Recharts", "React Query", "Tailwind CSS", "Axios"],
       link: "#",
-      company: "SAS AVÉO",
-      period: "2012-2013"
+      company: "Projet Personnel",
+      period: "2024",
+      github: "https://github.com/patricelorent/react-analytics-dashboard"
     },
     {
-      title: "Application iOS Expertise Terrain",
-      description: "Développement d'une app mobile pour l'expertise des lignes électriques avec synchronisation serveur temps réel",
-      tech: ["iOS", "PHP", "MySQL", "API REST"],
+      title: "🐳 Application Conteneurisée DevOps",
+      description: "Stack complète Node.js + MySQL conteneurisée avec Docker. Déploiement automatisé sur Kubernetes (Minikube). CI/CD avec GitHub Actions, health checks et scaling",
+      tech: ["Docker", "Kubernetes", "Node.js", "MySQL", "CI/CD"],
       link: "#",
-      company: "SAS AVÉO",
-      period: "2011-2012"
+      company: "Projet Personnel",
+      period: "2024",
+      github: "https://github.com/patricelorent/devops-kubernetes-app"
     },
     {
-      title: "Application Diagnostic Immobilier",
-      description: "Solution métier pour diagnostic technique immobilier avec génération automatique de rapports professionnels",
-      tech: ["VBA", "Excel 2007", "Word 2007"],
-      link: "#",
-      company: "Société DIMENSIO",
-      period: "2014"
+      title: "💻 Portfolio IT Moderne",
+      description: "Portfolio personnel avec design néo-brutaliste cyberpunk, animations fluides, sections détaillées. Déployé sur GitHub Pages avec workflow automatisé",
+      tech: ["React", "Tailwind CSS", "Vite", "GitHub Pages", "GitHub Actions"],
+      link: "https://patricelorent.github.io/portfolio",
+      company: "Projet Personnel",
+      period: "2025",
+      github: "https://github.com/patricelorent/portfolio"
     }
   ];
 
@@ -250,10 +256,15 @@ export default function Portfolio() {
                 style={{ animation: `slideInRight 0.6s ease-out ${idx * 0.1}s both` }}>
                 
                 <div className="flex items-start justify-between mb-2">
-                  <h3 className="text-2xl font-bold group-hover:text-lime-400 transition-colors">
+                  <h3 className="text-2xl font-bold group-hover:text-lime-400 transition-colors flex-1">
                     {project.title}
                   </h3>
-                  <ExternalLink className="w-6 h-6 text-gray-600 group-hover:text-lime-400 transition-colors flex-shrink-0 ml-2" />
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer"
+                      className="flex-shrink-0 ml-2">
+                      <Github className="w-6 h-6 text-gray-600 group-hover:text-lime-400 transition-colors" />
+                    </a>
+                  )}
                 </div>
 
                 <div className="flex flex-wrap gap-2 mb-4 text-sm font-mono text-cyan-400">
@@ -275,6 +286,16 @@ export default function Portfolio() {
                     </span>
                   ))}
                 </div>
+
+                {(project.link && project.link !== '#') && (
+                  <div className="mt-6 pt-6 border-t-2 border-gray-800 group-hover:border-lime-400 transition-colors">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-lime-400 font-mono text-sm 
+                        hover:gap-4 transition-all duration-300">
+                      VOIR LE PROJET <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                )}
               </div>
             ))}
           </div>
