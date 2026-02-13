@@ -1,5 +1,10 @@
-## 0.1.0 (February 12, 2026)
+## 0.3.0 (February 13, 2026)
+  - :star: feature(portfolio): ajout de nouveaux projets personnels avec descriptions détaillées et liens GitHub
+
+## 0.2.0 (February 12, 2026)
   - :star: feature(portfolio): mise à jour du contenu pour Patrice Lorent
+
+## 0.1.0 (February 12, 2026)
   - Merge branch 'feature/maj_README' into develop
   - :up: update(README.md): mise à jour README.md avec des instructions de déploiement GitHub Pages et des conseils de dépannage
   - Merge branch 'feature/maj_lien' into develop
