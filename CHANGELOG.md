@@ -1,7 +1,12 @@
-## 0.1.0 (February 12, 2026)
+## 0.2.0 (February 12, 2026)
   - :star: feature(portfolio): mise à jour du contenu pour Patrice Lorent
-  - Merge branch 'feature/maj_README' into develop
+
+## 0.1.1 (February 12, 2026)
+  - Merge branch 'feature/maj_README'
   - :up: update(README.md): mise à jour README.md avec des instructions de déploiement GitHub Pages et des conseils de dépannage
+
+## 0.1.0 (February 12, 2026)
+  - :up: update(portfolio): mise à jour du site portfolio
   - Merge branch 'feature/maj_lien' into develop
   - :up:  update(lien): mise à jour des liens vers GitHub, LinkedIn et email dans le portfolio
   - :up: update(vite.config.js): mise à jour du paramètre base pour GitHub Pages
@@ -16,6 +21,7 @@
   - :star: feature(deploy.yml): ajout du workflow de déploiement sur GitHub Pages
   - Merge branch 'feature/init_portfolio' into develop
   - :star: feature (initial): ajout initial fichiers de base pour le portfolio IT avec React, Vite et Tailwind CSS.
+  - Add GitHub Actions workflow for deployment
   - :star: feature(index.html): ajout page moderne portfolio
   - Initial commit
 
