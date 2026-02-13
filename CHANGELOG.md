@@ -1,3 +1,6 @@
+## 0.3.0 (February 13, 2026)
+  - :star: feature(portfolio): ajout de nouveaux projets personnels avec descriptions détaillées et liens GitHub
+
 ## 0.2.0 (February 12, 2026)
   - :star: feature(portfolio): mise à jour du contenu pour Patrice Lorent
 
