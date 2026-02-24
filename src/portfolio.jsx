@@ -22,10 +22,10 @@ export default function Portfolio() {
       title: "🎙️ Transcription Audio IA - Whisper",
       description: "Application web de transcription audio utilisant OpenAI Whisper. Interface drag & drop, support multi-formats (MP3, WAV, M4A), déployée sur Hugging Face Spaces",
       tech: ["Python", "Flask", "OpenAI Whisper", "Transformers", "Hugging Face"],
-      link: "https://huggingface.co/spaces/[ton-username]/whisper-transcription",
+      link: "https://huggingface.co/spaces/Kiba945/whisper-transcription",
       company: "Projet Personnel",
       period: "2024",
-      github: "https://github.com/patricelorent/whisper-transcription"
+      github: "https://github.com/plorent-droid/whisper-transcription"
     },
     {
       title: "📊 Gestionnaire de Tâches VBA Excel",
@@ -67,10 +67,10 @@ export default function Portfolio() {
       title: "💻 Portfolio IT Moderne",
       description: "Portfolio personnel avec design néo-brutaliste cyberpunk, animations fluides, sections détaillées. Déployé sur GitHub Pages avec workflow automatisé",
       tech: ["React", "Tailwind CSS", "Vite", "GitHub Pages", "GitHub Actions"],
-      link: "https://patricelorent.github.io/portfolio",
+      link: "https://plorent-droid.github.io/patrice.lorent.github.io/",
       company: "Projet Personnel",
-      period: "2025",
-      github: "https://github.com/patricelorent/portfolio"
+      period: "2026",
+      github: "https://github.com/plorent-droid/patrice.lorent.github.io"
     }
   ];
 
@@ -216,11 +216,11 @@ export default function Portfolio() {
 
           <div className="flex gap-6 justify-center"
             style={{ animation: 'slideInUp 1s ease-out 0.8s both' }}>
-            <a href="https://github.com/patricelorent" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/plorent-droid/" target="_blank" rel="noopener noreferrer"
               className="p-3 border-2 border-gray-600 hover:border-lime-400 hover:bg-lime-400/10 transition-all duration-300">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com/in/patrice-lorent" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/patrice-lorent-57643683" target="_blank" rel="noopener noreferrer"
               className="p-3 border-2 border-gray-600 hover:border-cyan-400 hover:bg-cyan-400/10 transition-all duration-300">
               <Linkedin className="w-6 h-6" />
             </a>

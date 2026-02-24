@@ -1,3 +1,9 @@
+## 0.3.1 (February 25, 2026)
+  - :up: update(liens): corrige les liens vers GitHub et LinkedIn, et met à jour les URLs des projets sur Hugging Face et GitHub Pages.
+  - Merge branch 'feature/ajout_projet_perso' into develop
+  - :up update(CHANGELOG.md): mise à jour CHANGELOG.md
+  - :up: update(VERSION): mise à jour de la version à 0.2.0
+
 ## 0.3.0 (February 13, 2026)
   - :star: feature(portfolio): ajout de nouveaux projets personnels avec descriptions détaillées et liens GitHub
 
